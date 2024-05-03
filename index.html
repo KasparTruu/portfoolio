@@ -1,72 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-         @keyframes gradientAnimation {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-
-    body {
-        background: linear-gradient(60deg, #000000,#4c3ae7,#51138b, #5d16d1, #8106e6,#561a7e, #5900ff,#000000, #000000, #000000);
-        background-size: 800% 800%;
-        animation: gradientAnimation 30s ease infinite;
-    }
-        @keyframes waveAnimation {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            25% {
-                transform: translateY(-5px);
-            }
-            50% {
-                transform: translateY(5px);
-            }
-            75% {
-                transform: translateY(-5px);
-            }
-        }
-        .animated-name {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .letter {
-            display: inline-block;
-            animation: waveAnimation 1s forwards;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Portfolio</title>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-gray-800 text-white text-center py-4">
-        <h1 class="text-2xl">
-            <span class="animated-name">
-                <span class="letter">K</span>
-                <span class="letter">a</span>
-                <span class="letter">s</span>
-                <span class="letter">p</span>
-                <span class="letter">a</span>
-                <span class="letter">r</span>
-            </span>
-        </h1>
-    </header>
-    <div class="container mx-auto mt-4 p-4 bg-white rounded-lg shadow-lg">
-        <h2 class="text-xl">About Me</h2>
-        <p class="text-center">Welcome to my portfolio website. I am a web developer passionate about creating beautiful and functional websites.</p>
-        <h2 class="text-xl mt-4">Links</h2>
-        <ul class="text-center">
-            <li><a href="#" class="text-blue-500 hover:underline">Github</a></li>
-            <li><a href="#" class="text-blue-500 hover:underline">Facebook</a></li>
-            <li><a href="#" class="text-blue-500 hover:underline">Twitter</a></li>
-        </ul>
-        <h2 class="text-xl mt-4">Contact Me</h2>
-        <p class="text-center">Email: Kaspar.Truu@gmail.com</p>
-        <p class="text-center">Phone: 5390-123456</p>
+<body class="bg-black text-white">
+  <header class="bg-black py-8 animate-pulse">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl">Kaspar Truu</h1>
+      <p class="text-lg">Web Developer</p>
     </div>
+  </header>
+
+  <main class="container mx-auto py-12">
+    <section class="mb-12">
+      <h2 class="text-2xl text-white">About Me</h2>
+      <p>i'm 16 years old and learning coding in different languages and Im tring to develop myself.</p>
+      <li><a href="https://github.com/KasparTruu" class="text-white hover:underline">Link to my Github</a></li>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-white">My Work</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <button class="bg-white p-4 rounded shadow hover:bg-gray-800 transition duration-300 ease-in-out">
+          <h3 class="text-xl text-white">Programeerimine</h3>
+          <a href="https://github.com/KasparTruu/programeerimine" class="text-gray-300">Pyhton exercises</a>
+        </button>
+        <button class="bg-white p-4 rounded shadow hover:bg-gray-800 transition duration-300 ease-in-out">
+          <h3 class="text-xl text-white">Portfoolio</h3>
+          <a href="https://github.com/KasparTruu/portfoolio" class="text-gray-300">Tring different styles for a layout</a>
+        </button>
+        <button class="bg-white p-4 rounded shadow hover:bg-gray-800 transition duration-300 ease-in-out">
+          <h3 class="text-xl text-white">Design_Equipment_Rent</h3>
+          <a href="https://github.com/JaanikaT/Design_Equipment_Rent" class="text-gray-300">The first team work that was good and turned out well</a>
+        </button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
